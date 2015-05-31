@@ -1,0 +1,11 @@
+name: Tag
+main: Tag\MainClass
+version: 1.0.0
+api: [1.0.0]
+author: KyleTheHack3r
+description: Tag
+commands:
+ tag:
+  description: Add a prefix to your display tag
+  usage: "Usage: /tag <nametag>"
+  permission: tag.command.set
