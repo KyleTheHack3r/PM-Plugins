@@ -14,7 +14,7 @@ class MainClass extends PluginBase{
                     $tag = $args[0];
                     $name = $sender->getName();
                     $sender->setNameTag("[$tag] $name");
-                    $sender->sendMessage("<TAG> You have changed your tag to " . $tag . "Enjoy.");      
+                    $sender->sendMessage("<TAG> You have changed your tag to " . $tag . " Enjoy.");      
                 }
             }
         }
