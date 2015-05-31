@@ -1,5 +1,5 @@
 <?php
-namespace TC;
+namespace Tag;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
