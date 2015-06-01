@@ -1,0 +1,11 @@
+name: 1v1
+main: onevone\MainClass
+version: 1.0.0
+api: [1.0.0]
+author: KyleTheHack3r
+description: Test 1v1 plugin. Don't expect it to work
+commands:
+ 1v1:
+  description: Should let you start a 1v1 match
+  usage: "Usage: /1v1 <player>"
+  permission: onevone.command.go
