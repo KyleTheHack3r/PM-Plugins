@@ -9,6 +9,12 @@ class MainClass extends PluginBase{
 
 $game = array('game1','game2','game3');
 // have 3 games running
+$game1 = 1;
+$game2 = 1;
+$game3 = 1;
+// 1 = not defined
+// 2 = if set; the request to $request has been sent
+// 3 = $request has accepted (teleport) 
 
  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
         if(strtolower($cmd->getName()) === "1v1") {
@@ -22,7 +28,10 @@ $game = array('game1','game2','game3');
                         /*
                             $random_game = array_rand($game);
                             if($random_game == "game1"){
-                                // teleport to game1 when $request accepts
+                                if($accepted == 1){
+                                    //setPosition (Vector3 $pos)
+                                    $game1 = 3;
+                                }
                                 // close "game1" for other people
                             }elseif($random_game == "game2"){
                                 // do the same stuff as above
@@ -32,8 +41,13 @@ $game = array('game1','game2','game3');
                         */
                     }
                     $sender->sendMessage("<1v1> Your invitation has been sent to " . $request . ".");      
-                }
-            }
+                }else{
+                      // no arguments have been defined
+                      // pick a player at random
+                      }
+            }else{
+                  $sender->sendMessage("<1v1> Oops! You don't have permission to do this.");
+                 }
         }
  }
 
