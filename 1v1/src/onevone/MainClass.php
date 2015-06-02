@@ -22,6 +22,7 @@ $game3 = 1;
                 if(count($args) === 1) {
                     $request = $this->getServer()->getPlayer($args[0]);
                     if($request instanceof Player) {
+                        $game1 = 2;
                         $request->sendMessage("<1v1> . $sender . " has requested to 1v1 you.");
                         $request->sendMessage("<1v1> Type '/1v1 accept' to accept the request.");
                         // do some stuff here
@@ -35,8 +36,16 @@ $game3 = 1;
                                 // close "game1" for other people
                             }elseif($random_game == "game2"){
                                 // do the same stuff as above
+                                if($accepted == 1){
+                                    //setPosition (Vector3 $pos)
+                                    $game2 = 3;
+                                }
                             }else($random_game == "game3"){
                                 // and again
+                                if($accepted == 1){
+                                    //setPosition (Vector3 $pos)
+                                    $game3 = 3;
+                                }
                             }
                         */
                     }
