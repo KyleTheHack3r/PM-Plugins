@@ -7,7 +7,7 @@ use pocketmine\Server;
 use pocketmine\utils\TextFormat;
 class MainClass extends PluginBase{
 
-$game = array('game1','game2',game3');
+$game = array('game1','game2','game3');
 // have 3 games running
 
  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
