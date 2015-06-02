@@ -24,11 +24,14 @@ $game = array('game1','game2','game3');
                             if($random_game == "game1"){
                                 // teleport to game1 when $request accepts
                                 // close "game1" for other people
+                            }elseif($random_game == "game2"){
+                                // do the same stuff as above
+                            }else($random_game == "game3"){
+                                // and again
                             }
-
                         */
                     }
-                    $sender->sendMessage("<1v1> bla bla bla confirmation");      
+                    $sender->sendMessage("<1v1> Your invitation has been sent to " . $request . ".");      
                 }
             }
         }
