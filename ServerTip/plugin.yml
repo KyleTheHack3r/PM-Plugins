@@ -1,0 +1,11 @@
+name: ServerTip
+main: Tip\MainClass
+version: 1.0.0
+api: [1.0.0]
+author: KyleTheHack3r
+description: Server Tip
+commands:
+ tip:
+  description: Send a random server tip to everyone
+  usage: "Usage: /tip"
+  permission: tip.command.send
