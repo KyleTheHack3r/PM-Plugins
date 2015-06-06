@@ -9,7 +9,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerDeathEvent;
 class MainClass extends PluginBase{
 
-$game = array('game1','game2','game3');
+$game = array("game1", "game2", "game3");
 // have 3 games running
 $game1 = 1;
 $game2 = 1;
