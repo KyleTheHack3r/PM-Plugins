@@ -33,8 +33,8 @@ private $etc;
                     $request = $this->getServer()->getPlayer($args[0]);
                     if($request instanceof Player) {
                         $game1 = 2;
-                        $request->sendMessage("<1v1> " . $sender . " has requested to 1v1 you.");
-                        $request->sendMessage("<1v1> Type '/1v1 accept' to accept the request.");
+                        $request->sendMessage("§a> §3" . $sender . " §rhas requested to 1v1 you.");
+                        $request->sendMessage("§a> §rType '/1v1 accept' to accept the request.");
                         // do some stuff here
                             $random_game = array_rand($game);
                             if($random_game == "game1"){
@@ -66,13 +66,13 @@ private $etc;
                                     }
                             }
                     }
-                    $sender->sendMessage("<1v1> Your invitation has been sent to " . $request . ".");      
+                    $sender->sendMessage("§a> §rYour invitation has been sent to §3" . $request . "§r.");      
                 }else{
                       // no arguments have been defined
                       // pick a player at random
                       }
             }else{
-                  $sender->sendMessage("<1v1> Oops! You don't have permission to do this.");
+                  $sender->sendMessage("§a> §rOops! You don't have permission to do this.");
                  }
         }
  }
