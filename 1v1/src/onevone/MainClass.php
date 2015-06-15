@@ -21,9 +21,6 @@ $game3 = 1;
 public function onEnable(){
           $this->getLogger()->info("1v1 Enabled");
      }
- 
-/** @var etc */
-private $etc;
     
     
  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
@@ -68,8 +65,11 @@ private $etc;
                     }
                     $sender->sendMessage("§a> §rYour invitation has been sent to §3" . $request . "§r.");      
                 }else{
-                      // no arguments have been defined
-                      // pick a player at random
+                    
+                      /** @var etc */
+                      private $etc;
+
+                      $this->getLogger()->info("Selecting a random player...");
                       }
             }else{
                   $sender->sendMessage("§a> §rOops! You don't have permission to do this.");
