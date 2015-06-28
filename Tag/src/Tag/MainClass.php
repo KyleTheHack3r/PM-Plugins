@@ -12,9 +12,13 @@ class MainClass extends PluginBase{
             if($sender->hasPermission("tag.command.set")) {
                 if(count($args) === 1) {
                     $tag = $args[0];
+                    if($tag == "admin" or $tag == "owner"){
+                        // do some random bs here
+                    }
                     $name = $sender->getName();
                     $sender->setNameTag("[$tag] $name");
-                    $sender->sendMessage("<TAG> You have changed your tag to " . $tag . " Enjoy.");      
+                    $sender->sendMessage("<TAG> You have changed your tag to " . $tag . " Enjoy.");    
+                    Server::getInstance()->broadcastMessage("[Tag] $name has updated their nametag.");
                 }
             }
         }
