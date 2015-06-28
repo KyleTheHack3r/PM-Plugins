@@ -5,22 +5,15 @@ use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat;
+use pocketmine\event\player\PlayerJoinEvent;
+
 class MainClass extends PluginBase{
 
- public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
-        if(strtolower($cmd->getName()) === "tag") {
-            if($sender->hasPermission("tag.command.set")) {
-                if(count($args) === 1) {
-                    $tag = $args[0];
-                    if($tag == "admin" or $tag == "owner"){
-                        // do some random bs here
-                    }
-                    $name = $sender->getName();
-                    $sender->setNameTag("[$tag] $name");
-                    $sender->sendMessage("<TAG> You have changed your tag to " . $tag . " Enjoy.");    
-                    Server::getInstance()->broadcastMessage("[Tag] $name has updated their nametag.");
-                }
-            }
+    public function onJoin(PlayerJoinEvent $event){
+        $p = $event->getName();
+        if($p == "ThePMTeam"){
+            $p->setNameTag("§l[§4Owner§f]§r ThePMTeam");
         }
- }
+
+    }
 }
