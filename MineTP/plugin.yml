@@ -1,0 +1,11 @@
+name: MineTP
+main: Mine\MainClass
+version: 1.0.0
+api: [1.0.0]
+author: KyleTheHack3r
+description: This is just a test
+commands:
+ mine:
+  description: Teleport to a mine
+  usage: "Usage: /mine <args>"
+  permission: mine.command.tp
