@@ -1,6 +1,6 @@
 <?php
 namespace Mine
-;
+
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
