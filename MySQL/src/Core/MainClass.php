@@ -30,7 +30,7 @@ public function onEnable() {
 
 public function onJoin(PlayerJoinEvent $event) {
     $player = $event->getEntity();
-    $name = trim(strtolower($player->getName());
+    $name = trim(strtolower($player->getName()));
 
     $sql = "UPDATE joins SET test = 'hello world' WHERE name='".$name."'";
     $result = mysqli_query($bd, $sql);
