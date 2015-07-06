@@ -1,5 +1,5 @@
 <?php
-namespace Tag;
+namespace Core\MainClass;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
