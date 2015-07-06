@@ -14,6 +14,15 @@ public function onEnable() {
     $mysql_user = $config["user"];
     $mysql_password = $config["password"];
     $mysql_database = $config["database"];
+    if($mysql_hostname == "null"){
+         $this->getLogger()->warning("You haven't defined a MySQL host!");
+    }
+     if($mysql_user == "null"){
+         $this->getLogger()->warning("You haven't defined a MySQL user!");
+    }
+     if($mysql_database == "null"){
+         $this->getLogger()->warning("You haven't defined a MySQL database!");
+    }
 
     $bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password);
     mysqli_select_db($bd, $mysql_database);
