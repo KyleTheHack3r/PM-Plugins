@@ -1,0 +1,6 @@
+name: MySQL
+main: Core\MainClass
+version: 1.0.0
+api: [1.0.0]
+author: KyleTheHack3r
+description: Just a test
