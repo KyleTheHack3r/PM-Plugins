@@ -1,0 +1,8 @@
+name: Broadcast
+main: Broadcast\MainClass
+version: 1.0.0
+api: [1.0.0]
+
+load: POSTWORLD
+author: KyleTheHack0r
+description: Simple message broadcast plugin
